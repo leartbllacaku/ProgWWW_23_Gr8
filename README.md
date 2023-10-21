@@ -1,3 +1,2 @@
-Website project with frontend technologies including
-HTML & CSS and JavaScript, in the framework of the WWW subject 
-in the 5th semester# WWW-Project
+A project that focuses on designing and developing a website within frontend technologies
+including HTML & CSS and JavaScript, for 5th semester subject WWW..# WWW-Project
