@@ -164,7 +164,7 @@ a{
 .top-section{
     width: 100%;
     height: 802px;
-    background: url(../Images/cover-foto.svg);
+    background: url(./Images/cover-foto.svg);
     background-size: cover;
     display: flex;
     flex-direction: column;
