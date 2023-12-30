@@ -3,14 +3,14 @@
     box-sizing: border-box;
 
 }
-p{
-    margin: 0;
-    padding: 0;
-}
 .body{
     margin: 0;
     width: 100%;
     position: absolute;
+}
+p{
+    margin: 0;
+    padding: 0;
 }
 .header{
     width: 100%;
@@ -144,7 +144,7 @@ a{
     height: 32px;
     background: #DBDFD0;
 } 
-#book-button{
+.book-button1{
     width: 12%;
     height: 48px;
     display: flex;
