@@ -5,6 +5,7 @@
 }
 .body{
     margin: 0;
+    padding: 0;
     width: 100%;
     position: absolute;
 }
@@ -153,10 +154,10 @@ a{
     border-radius: 118px;
     border: 2px solid black;
     text-wrap: nowrap;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     font-family: 'DM Sans', sans-serif;
-    font-size: 100%;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;  
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -325,7 +326,7 @@ a{
 }
 .explore-button{
     margin-top: 30px;
-    width: 111px;
+    width: 70%;
     height: 26px;
     cursor: pointer;
 }
@@ -356,4 +357,144 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.left-content{
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.about-image{
+    width: 91%;
+    height: 566px;
+    padding:0;
+    object-fit: cover;
+} /*
+.left-section-text{
+    width: 63%;
+    height: 321px;
+    position: absolute; 
+} */
+.right-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-content-text{
+    width: 85%;
+    height: 457px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    align-items: center;
+}
+.right-content-title{
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60.5px;
+}
+.right-content-para1{
+    width: 100%;
+    margin-top: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px
+}
+.right-content-para2{
+    width: 100%;
+    margin-top: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.about-us-button{
+    width: 30%;
+    height: 64px;
+    margin-top: 40px;
+    margin-right: auto;
+    border: 2px solid black;
+    border-radius: 118px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.section3{
+    width: 100%;
+    height: 868px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.section3-content{
+    width: 81%;
+    height: 628px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section3-top{
+   align-self: center;
+   margin-right: auto;
+}
+.section3-top-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60.5px;
+}
+.section3-bottom{
+    margin-top: 64px;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+.section3-card{
+    width: 306px;
+    height: 443px; 
+    align-items: flex-start;  
+}
+.section3-card-image{
+    width: 100%;
+    height: 320px;
+}
+.section3-card-title{
+    margin-top: 30px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.72px;
+}
+.section3-card-desc{
+    margin-top: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
