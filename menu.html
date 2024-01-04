@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $('#navbar').load('components/navbar.html', function() {
+                $('#menu').addClass('active');
+            });
+            $('#footer').load('components/footer.html');
+        });
+    </script>
 </head>
 <body>
-    
+    <div id="navbar"></div>
+    <div id="footer"></div>
 </body>
 </html>
