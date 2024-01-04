@@ -1,360 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restaurant</title>
 
-        <link rel="stylesheet" href="resources/css/index.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    </head>
+    <link rel="stylesheet" href="resources/css/index.css">
 
-    <body>
-        <header class="header">
-            <div class="top-bar">
-              <div class="info">
-                <div class="tel">
-                    <img src="resources/Images/tel-icon.svg" alt="Phone Icon">
-                    <p id="tel-icon">+383 44 100 100</p>
-                </div>
-                <div class="address">
-                    <img src="resources/Images/mail-icon.svg" alt="Mail Icon">
-                    <a href="mailto:yummy@bistro.com" target="_blank">yummy@bistro.com</a>
-                </div>
-              </div>
-              <div class="socials">
-                <a class="social-media" href="#">
-                    <img src="resources/Images/twitter-icon.svg" alt="Twitter logo">
-                </a>
-                <a class="social-media" href="https://www.facebook.com/profile.php?id=100011136363353" target="_blank">
-                    <img src="resources/Images/facebook-logo.svg" alt="Facebook logo">
-                </a>
-                <a class="social-media" href="https://www.instagram.com/leartbllacaku/" target="_blank">
-                    <img src="resources/Images/insta-logo.svg" alt="Instagram logo">
-                </a>
-              </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $('#navbar').load('components/navbar.html', function() {
+                $('#home').addClass('active');
+            });
+            $('#footer').load('components/footer.html');
+        });
+    </script>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <main class="main-section">
+        <div class="top-section">
+            <div class=moto>
+                <p class="moto-top">
+                    Best Food for <br>your taste
+                </p>
             </div>
-            <div class="bottom-bar">
-                <div class="title">
-                    <img id="logo" src="resources/Images/logo.svg" alt="Restaurant Logo">
-                    <p id="name">Bistro Bliss</p>
-                </div>
-                <nav class="navbar">
-                        <a id="home" href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Menu</a>
-                        <a href="#">Pages</a>
-                        <a href="#">Contact</a>
-                    
-                </nav>
-                
-                <a class="book-button1" href="#">Book A Table</a>
+            <div class="moto-bottom">
+                <p>Discover delectable cuisine and unforgettable
+                    moments <br> in our welcoming, culinary heaven.
+                </p>
             </div>
-           
-        </header>
-        <main class="main-section">
-            <div class="top-section">
-                <div class=moto>
-                    <p class="moto-top">
-                            Best Food for <br>your taste 
-                    </p>
-                </div>
-                <div class="moto-bottom">
-                    <p>Discover delectable cuisine and unforgettable
-                        moments <br> in our welcoming, culinary heaven.
-                    </p>
-                </div>
-                <div class="butonat">
-                    <button class="book-buton">
-                        Book a Table
-                    </button>
-                    <button class="menu-button">
-                        Explore Menu
-                    </button>
-                </div>
+            <div class="butonat">
+                <button class="book-buton">
+                    Book a Table
+                </button>
+                <button class="menu-button">
+                    Explore Menu
+                </button>
             </div>
-            <div class="section1">
-                <div class="section1-content">
-                    <div class="section1-title">
-                        <p class="sect1-title">Browse Our Menu</p>
+        </div>
+        <div class="section1">
+            <div class="section1-content">
+                <div class="section1-title">
+                    <p class="sect1-title">Browse Our Menu</p>
+                </div>
+                <div class="card">
+                    <div class="card1">
+                        <div class="card1-elements">
+                            <div class="card-logo">
+                                <img class="cardlogo" src="resources/Images/tea-logo.svg" alt="Food Logo">
+                            </div>
+                            <div class="card-title">
+                                <p class="cardtitle">Breakfast</p>
+                            </div>
+                            <div class="card-desc">
+                                <p class="carddesc">In the new era of technology we <br> look into the future
+                                    with certainty <br> and pride for our life.
+                                </p>
+                            </div>
+                            <div class="explore-button">
+                                <button id="explorebutton">Explore Menu</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <div class="card1">
-                            <div class="card1-elements">
-                                <div class="card-logo">
-                                    <img class="cardlogo" src="resources/Images/tea-logo.svg" alt="Food Logo">
-                                </div>
-                                <div class="card-title">
-                                    <p class="cardtitle">Breakfast</p>
-                                </div>
-                                <div class="card-desc">
-                                    <p class="carddesc">In the new era of technology we <br> look into the future
-                                        with certainty <br> and pride for our life.
-                                    </p>
-                                </div>
-                                <div class="explore-button">
-                                    <button id="explorebutton">Explore Menu</button>
-                                </div>
+                    <div class="card1">
+                        <div class="card1-elements">
+                            <div class="card-logo">
+                                <img class="cardlogo" src="resources/Images/ice-cream.svg" alt="Food Logo">
+                            </div>
+                            <div class="card-title">
+                                <p style="text-wrap: nowrap;" class="cardtitle">Main Dishes</p>
+                            </div>
+                            <div class="card-desc">
+                                <p class="carddesc">In the new era of technology we <br> look into the future
+                                    with certainty <br> and pride for our life.
+                                </p>
+                            </div>
+                            <div class="explore-button">
+                                <button id="explorebutton">Explore Menu</button>
                             </div>
                         </div>
-                        <div class="card1">
-                            <div class="card1-elements">
-                                <div class="card-logo">
-                                    <img class="cardlogo" src="resources/Images/ice-cream.svg" alt="Food Logo">
-                                </div>
-                                <div class="card-title">
-                                    <p style="text-wrap: nowrap;" class="cardtitle">Main Dishes</p>
-                                </div>
-                                <div class="card-desc">
-                                    <p class="carddesc">In the new era of technology we <br> look into the future
-                                        with certainty <br> and pride for our life.
-                                    </p>
-                                </div>
-                                <div class="explore-button">
-                                    <button id="explorebutton">Explore Menu</button>
-                                </div>
+                    </div>
+                    <div class="card1">
+                        <div class="card1-elements">
+                            <div class="card-logo">
+                                <img class="cardlogo" src="resources/Images/Drinks.svg" alt="Food Logo">
+                            </div>
+                            <div class="card-title">
+                                <p class="cardtitle">Drinks</p>
+                            </div>
+                            <div class="card-desc">
+                                <p class="carddesc">In the new era of technology we <br> look into the future
+                                    with certainty <br> and pride for our life.
+                                </p>
+                            </div>
+                            <div class="explore-button">
+                                <button id="explorebutton">Explore Menu</button>
                             </div>
                         </div>
-                        <div class="card1">
-                            <div class="card1-elements">
-                                <div class="card-logo">
-                                    <img class="cardlogo" src="resources/Images/Drinks.svg" alt="Food Logo">
-                                </div>
-                                <div class="card-title">
-                                    <p class="cardtitle">Drinks</p>
-                                </div>
-                                <div class="card-desc">
-                                    <p class="carddesc">In the new era of technology we <br> look into the future
-                                        with certainty <br> and pride for our life.
-                                    </p>
-                                </div>
-                                <div class="explore-button">
-                                    <button id="explorebutton">Explore Menu</button>
-                                </div>
+                    </div>
+                    <div class="card1">
+                        <div class="card1-elements">
+                            <div class="card-logo">
+                                <img class="cardlogo" src="resources/Images/Desserts.svg" alt="Food Logo">
                             </div>
-                        </div>
-                        <div class="card1">
-                            <div class="card1-elements">
-                                <div class="card-logo">
-                                    <img class="cardlogo" src="resources/Images/Desserts.svg" alt="Food Logo">
-                                </div>
-                                <div class="card-title">
-                                    <p class="cardtitle">Desserts</p>
-                                </div>
-                                <div class="card-desc">
-                                    <p class="carddesc">In the new era of technology we <br> look into the future
-                                        with certainty <br> and pride for our life.
-                                    </p>
-                                </div>
-                                <div class="explore-button">
-                                    <button id="explorebutton">Explore Menu</button>
-                                </div>
+                            <div class="card-title">
+                                <p class="cardtitle">Desserts</p>
+                            </div>
+                            <div class="card-desc">
+                                <p class="carddesc">In the new era of technology we <br> look into the future
+                                    with certainty <br> and pride for our life.
+                                </p>
+                            </div>
+                            <div class="explore-button">
+                                <button id="explorebutton">Explore Menu</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </div>
-            <div class="section2">
-                <div class="section2-content">
-                    <div class="left-content">
+
+        </div>
+        <div class="section2">
+            <div class="section2-content">
+                <div class="left-content">
+                    <div class="about-image-container">
                         <img class="about-image" src="resources\Images\about-image.svg" alt="Tasty Sandwhich">
                         <div class="left-section-text">
-
-                        </div>
-                    </div>
-                    <div class="right-content">
-                        <div class="right-content-text">
-                            <p class="right-content-title">
-                                We provide healthy<br> food for your family.
-                            </p>
-                            <p class="right-content-para1">
-                                Our story began with a vision to create a unique dining experience that merges fine dining, 
-                                exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim to honor 
-                                our local roots while infusing a global palate.
-                            </p>
-                            <p class="right-content-para2">
-                                At place, we believe that dining is not just about food, but also about the overall experience. Our staff, renowned 
-                                for their warmth and dedication, strives to make every visit an unforgettable event.
-                            </p>
-                            <a class="about-us-button" href="#">More About Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section3">
-                <div class="section3-content">
-                    <div class="section3-top">
-                        <p class="section3-top-title">We also offer unique <br> services for your events</p>
-                    </div>
-                    <div class="section3-bottom">
-                        <div class="section3-card">
-                           <img src="resources/Images/section3-kebap.svg" alt="Food Catering">
-                           <p class="section3-card-title">Caterings</p>
-                        <p class="section3-card-desc">In the new era of technology we look in the future with certainty for life.</p>
-                        </div>
-                        <div class="section3-card">
-                            <img src="resources/Images/section3-birthday.svg" alt="Birthday Photo">
-                           <p class="section3-card-title">Birthdays</p>
-                        <p class="section3-card-desc">In the new era of technology we look in the future with certainty for life.</p>
-                        </div>
-                        <div class="section3-card">
-                            <img src="resources/Images/section3-weddings.svg" alt="Wedding Photo">
-                           <p class="section3-card-title">Weddings</p>
-                        <p class="section3-card-desc">In the new era of technology we look in the future with certainty for life.</p>
-                        </div>
-                        <div class="section3-card">
-                            <img src="resources/Images/section3-event.svg" alt="Event Photo">
-                           <p class="section3-card-title">Events</p>
-                        <p class="section3-card-desc">In the new era of technology we look in the future with certainty for life.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section4">
-                <div class="section4-content">
-                    <div class="section4-left">
-                        
-                            <div class="section4-left-image">
-                                <img class="chef-image" src="resources\Images\section4-chef.svg" alt="Chef Cooking">
-                            </div>
-                            <div class="section4-right-image">
-                                <img class="section4-curry" src="resources\Images\section4-curry.svg" alt="Curry Dish">
-                                <img class="section4-ironpot" src="resources\Images\section4-ironpot.svg" alt="Ironpot">
-                            </div>
-                        
-                    </div>
-                    <div class="section4-right">
-                        <div class="section4-right-title">
-                            <p class="section4-title">
-                                Fastest Food <br> Delivery in City
-                            </p>
-                            <p class="section4-desc">
-                                Our visual designer lets you quickly and of drag a down <br> your way to customapps for both keep desktop. 
-                            </p>
-                        </div>
-                        <div class="section4-right-info">
-                            <div class="section4-info1">
-                                <div class="info1-image-box">
-                                    <img class="info1-image" src="resources\Images\section4-clockIcon.svg" alt="Clock Icon">
-                                </div>
-                                <p class="section4-info1-desc">Delivery within 30 minutes</p>
-                            </div>
-                            <div class="section4-info2">
-                                <div class="info1-image-box">
-                                    <img class="info1-image" src="resources\Images\section4-clockIcon.svg" alt="Clock Icon">
-                                </div>
-                                <p class="section4-info1-desc">Best Offer & Prices</p>
-                            </div>
-                            <div class="section4-info2">
-                                <div class="info1-image-box">
-                                    <img class="info1-image" src="resources\Images\section4-clockIcon.svg" alt="Clock Icon">
-                                </div>
-                                <p class="section4-info1-desc">Online Services Available</p>
-                            </div>
-                            
-                        </div>
-
-                    </div>
-                </div>
-                
-            </div>
-            <div class="section5">
-                <div class="section5-content">
-                    <div class="section5-title">
-                        <p>What Our Costumer Say</p>
-                    </div>
-                    <div class="section5-card">
-                        <div class="section5-card1">
-                            <div class="section5-card1-element">
-                                <div class="section5-card1-text">
-                                    <p class="section5-card1-title">
-                                        “The best restaurant”
-                                    </p>
-                                    <p class="section5-card1-desc">
-                                        Last night, we dined at place and were simply blown away. From the moment we stepped in, we were enveloped in an inviting 
-                                        atmosphere and greeted with warm smiles.
-                                    </p>
-                                </div>
-                                <div class="section5-card1-line"></div>
-                                <div class="section5-user">
-                                    <img class="section5-user-img" src="resources/Images/section5-user1.svg" alt="Sophie Robson Image">
-                                    <div class="section5-user-text">
-                                        <p class="user-text-1">
-                                            Sophire Robson
-                                        </p>
-                                        <p class="user-text-2">
-                                            Los Angeles, CA
-                                        </p>
+                            <div class="left-section-text-container">
+                                <h1 class="left-section-text-title">Come and visit us</h1>
+                                <div class="left-section-text-grupi">
+                                    <div class="grupi-element1">
+                                        <img class="grupi-element1-img" src="resources/Images/phone-icon.svg"
+                                            alt="Phone Icon">
+                                        <p class="grupi-element1-desc">044 100 100</p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section5-card1">
-                            <div class="section5-card1-element">
-                                <div class="section5-card1-text">
-                                    <p class="section5-card1-title">
-                                        “Simply delicious”
-                                    </p>
-                                    <p class="section5-card1-desc">
-                                        Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed, making it a perfect 
-                                        venue for our anniversary dinner. Each dish was prepared and beautifully presented.
-                                    </p>
-                                </div>
-                                <div class="section5-card1-line"></div>
-                                <div class="section5-user">
-                                    <img class="section5-user-img" src="resources/Images/section5-user2.svg" alt="Sophie Robson Image">
-                                    <div class="section5-user-text">
-                                        <p class="user-text-1">
-                                            Matt Cannon
-                                        </p>
-                                        <p class="user-text-2">
-                                            San Diego, CA
-                                        </p>
+                                    <div class="grupi-element1">
+                                        <img class="grupi-element1-img" src="resources/Images/mail-icon1.svg"
+                                            alt="Email Icon">
+                                        <p class="grupi-element1-desc">happytummy@restaurant.com</p>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section5-card1">
-                            <div class="section5-card1-element">
-                                <div class="section5-card1-text">
-                                    <p class="section5-card1-title">
-                                        “One of a kind restaurant”
-                                    </p>
-                                    <p class="section5-card1-desc">
-                                        The culinary experience at place is first to none. The atmosphere is vibrant, the food - 
-                                        nothing short of extraordinary. The food was the highlight of our evening. Highly recommended.
-                                    </p>
-                                </div>
-                                <div class="section5-card1-line"></div>
-                                <div class="section5-user">
-                                    <img class="section5-user-img" src="resources/Images/section5-user3.svg" alt="Sophie Robson Image">
-                                    <div class="section5-user-text">
-                                        <p class="user-text-1">
-                                            Andy Smith
-                                        </p>
-                                        <p class="user-text-2">
-                                            San Francisco, CA
-                                        </p>
+                                    <div class="grupi-element1">
+                                        <img class="grupi-element1-img" src="resources/Images/location-icon.svg"
+                                            alt="Location Icon">
+                                        <p class="grupi-element1-desc">837 W. Marshall Lane Marshalltown, IA 50158, Los
+                                            Angeles</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="right-content">
+                    <div class="right-content-text">
+                        <p class="right-content-title">
+                            We provide healthy<br> food for your family.
+                        </p>
+                        <p class="right-content-para1">
+                            Our story began with a vision to create a unique dining experience that merges fine dining,
+                            exceptional service, and a vibrant ambiance. Rooted in city's rich culinary culture, we aim
+                            to honor
+                            our local roots while infusing a global palate.
+                        </p>
+                        <p class="right-content-para2">
+                            At place, we believe that dining is not just about food, but also about the overall
+                            experience. Our staff, renowned
+                            for their warmth and dedication, strives to make every visit an unforgettable event.
+                        </p>
+                        <a class="about-us-button" href="#">More About Us</a>
+                    </div>
+                </div>
             </div>
-            <div class="section6">
-
+        </div>
+        <div class="section3">
+            <div class="section3-content">
+                <div class="section3-top">
+                    <p class="section3-top-title">We also offer unique <br> services for your events</p>
+                </div>
+                <div class="section3-bottom">
+                    <div class="section3-card">
+                        <img class="section3-card-image" src="resources\Images\section3-kebap.svg" alt="Food Catering">
+                        <p class="section3-card-title">Caterings</p>
+                        <p class="section3-card-desc">In the new era of technology we look in the future with certainty
+                            for life.</p>
+                    </div>
+                    <div class="section3-card">
+                        <img class="section3-card-image" src="resources\Images\section3-birthday.svg"
+                            alt="Birthday Photo">
+                        <p class="section3-card-title">Birthdays</p>
+                        <p class="section3-card-desc">In the new era of technology we look in the future with certainty
+                            for life.</p>
+                    </div>
+                    <div class="section3-card">
+                        <img class="section3-card-image" src="resources\Images\section3-weddings.svg"
+                            alt="Wedding Photo">
+                        <p class="section3-card-title">Weddings</p>
+                        <p class="section3-card-desc">In the new era of technology we look in the future with certainty
+                            for life.</p>
+                    </div>
+                    <div class="section3-card">
+                        <img class="section3-card-image" src="resources\Images\section3-event.svg" alt="Event Photo">
+                        <p class="section3-card-title">Events</p>
+                        <p class="section3-card-desc">In the new era of technology we look in the future with certainty
+                            for life.</p>
+                    </div>
+                </div>
             </div>
-                
-                
-        </main>
-        <footer>
+        </div>
+        <div class="section4">
+            <div class="section4-content">
+                <div class="section4-left">
 
-        </footer>
-    </body>
+                    <div class="section4-left-image">
+                        <img class="chef-image" src="resources\Images\section4-chef.svg" alt="Chef Cooking">
+                    </div>
+                    <div class="section4-right-image">
+                        <img class="section4-curry" src="resources\Images\section4-curry.svg" alt="Curry Dish">
+                        <img class="section4-ironpot" src="resources\Images\section4-ironpot.svg" alt="Ironpot">
+                    </div>
+
+                </div>
+                <div class="section4-right">
+                    <div class="section4-right-title">
+                        <p class="section4-title">
+                            Fastest Food <br> Delivery in City
+                        </p>
+                        <p class="section4-desc">
+                            Our visual designer lets you quickly and of drag a down <br> your way to customapps for both
+                            keep desktop.
+                        </p>
+                    </div>
+                    <div class="section4-right-info">
+                        <div class="section4-info1">
+                            <div class="info1-image-box">
+                                <img class="info1-image" src="resources\Images\section4-clockIcon.svg" alt="Clock Icon">
+                            </div>
+                            <p class="section4-info1-desc">Delivery within 30 minutes</p>
+                        </div>
+                        <div class="section4-info2">
+                            <div class="info1-image-box">
+                                <img class="info1-image" src="resources\Images\section4-clockIcon.svg" alt="Clock Icon">
+                            </div>
+                            <p class="section4-info1-desc">Best Offer & Prices</p>
+                        </div>
+                        <div class="section4-info2">
+                            <div class="info1-image-box">
+                                <img class="info1-image" src="resources\Images\section4-clockIcon.svg" alt="Clock Icon">
+                            </div>
+                            <p class="section4-info1-desc">Online Services Available</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="section5">
+            <div class="section5-content">
+                <div class="section5-title">
+                    <p>What Our Costumer Say</p>
+                </div>
+                <div class="section5-card">
+                    <div class="section5-card1">
+                        <div class="section5-card1-element">
+                            <div class="section5-card1-text">
+                                <p class="section5-card1-title">
+                                    “The best restaurant”
+                                </p>
+                                <p class="section5-card1-desc">
+                                    Last night, we dined at place and were simply blown away. From the moment we stepped
+                                    in, we were enveloped in an inviting
+                                    atmosphere and greeted with warm smiles.
+                                </p>
+                            </div>
+                            <div class="section5-card1-line"></div>
+                            <div class="section5-user">
+                                <img class="section5-user-img" src="resources\Images\section5-user1.svg"
+                                    alt="Sophie Robson Image">
+                                <div class="section5-user-text">
+                                    <p class="user-text-1">
+                                        Sophire Robson
+                                    </p>
+                                    <p class="user-text-2">
+                                        Los Angeles, CA
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section5-card1">
+                        <div class="section5-card1-element">
+                            <div class="section5-card1-text">
+                                <p class="section5-card1-title">
+                                    “Simply delicious”
+                                </p>
+                                <p class="section5-card1-desc">
+                                    Place exceeded my expectations on all fronts. The ambiance was cozy and relaxed,
+                                    making it a perfect
+                                    venue for our anniversary dinner. Each dish was prepared and beautifully presented.
+                                    All the best.
+                                </p>
+                            </div>
+                            <div class="section5-card1-line"></div>
+                            <div class="section5-user">
+                                <img class="section5-user-img" src="resources\Images\section5-user2.svg"
+                                    alt="Sophie Robson Image">
+                                <div class="section5-user-text">
+                                    <p class="user-text-1">
+                                        Matt Cannon
+                                    </p>
+                                    <p class="user-text-2">
+                                        San Diego, CA
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section5-card1">
+                        <div class="section5-card1-element">
+                            <div class="section5-card1-text">
+                                <p class="section5-card1-title">
+                                    “One of a kind restaurant”
+                                </p>
+                                <p class="section5-card1-desc">
+                                    The culinary experience at place is first to none. The atmosphere is vibrant, the
+                                    food -
+                                    nothing short of extraordinary. The food was the highlight of our evening. Highly
+                                    recommended.
+                                </p>
+                            </div>
+                            <div class="section5-card1-line"></div>
+                            <div class="section5-user">
+                                <img class="section5-user-img" src="resources\Images\section5-user3.svg"
+                                    alt="Sophie Robson Image">
+                                <div class="section5-user-text">
+                                    <p class="user-text-1">
+                                        Andy Smith
+                                    </p>
+                                    <p class="user-text-2">
+                                        San Francisco, CA
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <div id="footer"></div>
+</body>
 
 </html>

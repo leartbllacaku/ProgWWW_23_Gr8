@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 778px;
+}
+#footer-container {
+    width: 100%;
+    height: 100%;
+    background: #474747;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 9.5% 85px;
+}
+
+.top-footer {
+    width: 100%;
+    display: flex;
+    gap: 10.4%;
+}
+
+.details {
+    width: 230px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+
+.logo-image {
+    width: 55px;
+    height: 53px;
+}
+
+.logo-emri {
+    font-size: 32.67px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 29.333px;
+    letter-spacing: -0.4px;
+    color: #fff;
+}
+
+.logo-desc {
+    width: 100%;
+    margin-right: auto;
+    color: #ADB29E;
+}
+
+.rrjetet-sociale {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-right: auto;
+}
+
+.rrjetet-sociale a {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #AD343E;
+    border-radius: 50%;
+}
+
+.pages {
+    width: 25.4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.left-pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.left-pages h3 {
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.left-pages ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.left-pages ul li a {
+    width: max-content;
+    text-decoration: none;
+    color: #DBDFD0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.right-pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.right-pages h3 {
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.right-pages ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-right: auto;
+    gap: 20px;
+}
+
+
+.right-pages ul li {
+    width: 100%;
+}
+.right-pages ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: #DBDFD0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.images {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    gap: 40px;
+}
+
+.images h3 {
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.images-foto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.images-foto img {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grup1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.grup2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.line {
+    margin-top: 100px;
+    width: 100%;
+    height: 1px;
+    border-color: #414536;
+}
+
+#footer-container>span {
+    margin-top: 30px;
+    color: #ADB29E;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
