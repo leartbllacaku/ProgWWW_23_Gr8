@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+}
+a{
+    display: inline-flex;
+    text-decoration: none;
+    color:black;
+    justify-content: center;
+    align-items: center;
+    width: 77px;
+    height: 32px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+.container-1{
+    width: 100%;
+    height: 821px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+.container-1-content{
+    width: 81%;
+    height: 616px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+}
+.container-1-left-content{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: auto;
+}
+.container-1-right-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    
+}
+.right-content-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60.5px; 
+}
+.right-content-paragraph-1{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.right-content-paragraph-2{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.container-2{ 
+    width: 100%;
+    height: 955px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-2-content{
+    width: 100%;
+    height: 955px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.container-2-top{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 690px;
+}
+.container-2-top video{
+    object-fit: cover;
+    width: 100%;
+    height: 690px;
+}
+
+/* .containter-2-bottom{ 
+    width: 100%;
+    height: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center space-evenly;
+    align-items: center;
+}*/
+
