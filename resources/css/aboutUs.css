@@ -93,12 +93,14 @@ a{
     align-items: center;
 }
 .container-2-content{
+    
     width: 100%;
     height: 955px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
 }
 .container-2-top{
     display: flex;
@@ -113,12 +115,106 @@ a{
     height: 690px;
 }
 
-/* .containter-2-bottom{ 
-    width: 100%;
-    height: 265px;
+.containter-2-bottom{
+    /* padding: 80px;  */
+    width: 79.5%;
+    height: 90px;
+    gap: 87px;
     display: flex;
     flex-direction: row;
-    justify-content: center space-evenly;
+    justify-content: center;
     align-items: center;
-}*/
-
+}
+.column-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+.column-1-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.column-1-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+.title-column-1{
+    font-family: 'DM Sans', sans-serif;
+    size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+}
+.paragraph-column-1{
+    font-family: 'DM Sans', sans-serif;
+    size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.column-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+.column-2-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.column-2-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+.title-column-2{
+    font-family: 'DM Sans', sans-serif;
+    size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+}
+.paragraph-column-2{
+    font-family: 'DM Sans', sans-serif;
+    size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+.column-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+.column-3-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.column-3-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+.title-column-3{
+    font-family: 'DM Sans', sans-serif;
+    size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+}
+.paragraph-column-3{
+    font-family: 'DM Sans', sans-serif;
+    size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
