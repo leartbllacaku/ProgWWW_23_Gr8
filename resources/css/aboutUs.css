@@ -109,7 +109,7 @@ a{
     width: 100%;
     height: 690px;
 }
-.container-2-top video{
+.container-2-top iframe{
     object-fit: cover;
     width: 100%;
     height: 690px;
@@ -349,6 +349,7 @@ a{
 
 
 .container-3-content-left-down {
+    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -456,7 +457,7 @@ a{
 
 
 
-.section5{
+.container-5{
     width: 100%;
     height: 766px;
     display: flex;
@@ -464,21 +465,21 @@ a{
     align-items: center;
     background: #fff;
 }
-.section5-content{
+.container-5-content{
     width: 81%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.section5-title{
+.container-5-title{
     font-family: 'Playfair Display', serif;
     font-size: 55px;
     font-style: normal;
     font-weight: 500;
     line-height: 60.5px;
 }
-.section5-card{
+.container-5-card{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -486,7 +487,7 @@ a{
     margin-top: 64px;
     gap:24px;
 }
-.section5-card1{
+.container-5-card1{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -495,7 +496,7 @@ a{
     background: #F9F9F7;
     gap: 32px;
 }
-.section5-card1-element{
+.container-5-card1-element{
     width: 83%;
     height: 328px;
     display: flex;
@@ -503,12 +504,12 @@ a{
     gap: 32px;
     margin: 45px 35px 35px 35px;
 }
-.section5-card1-text{
+.container-5-card1-text{
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.section5-card1-title{
+.container-5-card1-title{
     color: #AD343E;
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
@@ -517,19 +518,19 @@ a{
     line-height: 30px; /* 125% */
     letter-spacing: -0.72px;
 }
-.section5-card1-desc{
+.container-5-card1-desc{
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
 }
-.section5-card1-line{
+.container-5-card1-line{
     width: 100%;
     height: 1px;
     background: rgba(219, 223, 208, 0.7);
 }
-.section5-user{
+.container-5-user{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -537,11 +538,11 @@ a{
     margin-right: auto;
     gap: 20px;
 }
-.section5-user-img{
+.container-5-user-img{
     width: 70px;
     height: 70px;
 }
-.section5-user-text{
+.container-5-user-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
