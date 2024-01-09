@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookt</title>
+
+
+    <script>
+        $(function () {
+            $('#navbar').load('components/navbar.html', function() {
+                $('#book').addClass('active');
+            });
+            $('#footer').load('components/footer.html');
+        });
+    </script>
 </head>
 <body>
+    <div id="navbar"></div>
     
+
+
+
+
+
+
+    
+    <div id="footer"></div>
 </body>
 </html>
