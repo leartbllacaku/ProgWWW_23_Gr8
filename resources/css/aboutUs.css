@@ -434,8 +434,8 @@ p{
 }
 
 .container-3-content-right{
-    width: 50%;
-    height: 680px;
+    /* width: 50%; */
+    /* height: 680px; */
     display: flex;
     align-items: center;
     justify-content: center;
