@@ -19,8 +19,47 @@ p{
 .contact-top{
     width: 100%;
     height: 611px;
-    background: #979797;
+    background: #f9f9f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
+    .top-content{
+        width: 50%;
+        height: 740px;
+        position: absolute;
+        top: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .contact-title{
+            width: 68%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .contact-title span{
+                color: #2C2F24;
+                font-family: 'Playfair Display', serif;
+                font-size: 100px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 96px;
+            }
+            .contact-title p{
+                color: #495460;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
+           
 
 .contact-bottom{
     width: 100%;
