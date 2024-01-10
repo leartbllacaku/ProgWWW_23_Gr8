@@ -164,8 +164,10 @@ p{
             align-items: center;
             height: 375px;
             width: 25%;
+            transition: all 0.3s ease;
         }
             .card1:hover{
+                transform: scale(1.1);
                 cursor: pointer;
             }
 
@@ -194,16 +196,19 @@ p{
                     transition: 0.5s;
                 }
                     .card-logo:hover{
-                        box-shadow: 0px 0px 7px rgba(77, 89, 43, 0.7) inset,
-                                    0px 0px 7px;
+                        box-shadow: 0px 0px 4px rgba(77, 89, 43, 0.7) inset,
+                                    0px 0px 4px;
                         background: transparent;
                     }
-
+                    .card-logo:hover .cardlogo{
+                        filter: brightness(0) saturate(100%) invert(22%) sepia(21%) saturate(7449%) hue-rotate(336deg) brightness(95%) contrast(81%);                    
+                    }
                     .cardlogo{
                         width: 48px;
                         height: 50px;
                         background: transparent;
                         color: black;
+                        transform: 0.5s;
                     }
 
                 .card-title{
@@ -470,7 +475,7 @@ p{
     justify-content: center;
     gap: 24px;
 }
-    .section3-card{
+    .section3-card1{
         height: 100%;
         display: flex;
         flex-direction: column; 
@@ -478,7 +483,7 @@ p{
         align-items: flex-start;
         flex: 1;  
 }
-
+ 
     .section3-card-image{
         width: 100%;
         height: 320px;
