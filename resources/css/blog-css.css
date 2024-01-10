@@ -250,7 +250,7 @@ line-height: 96px;
 }
 .first-section_content p{
   color: var(--Neutral-06, #414536);
-  
+  padding-top: 40px;
 text-align: center;
 font-family: DM Sans;
 font-size: 18px;
@@ -275,6 +275,11 @@ border-radius: 12px;
 border: 1px solid var(--Neutral-02, #F9F9F7);
 background: var(--Neutral-01, #FFF);
 box-shadow: 0px 2.979px 59.574px 0px rgba(0, 0, 0, 0.08);
+cursor: pointer;
+}
+.first-ask_box:hover{
+  transform:translateY(-10px) ;
+  transition: all 0.3s;
 }
 .photo-box{border-radius: 12px 12px 0px 0px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
@@ -300,11 +305,12 @@ line-height: 26px; /* 130% */
 padding-left: 25px;
 }
 .first-asks{
-  
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row;
+  
   
   
 }
