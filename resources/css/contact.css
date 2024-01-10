@@ -160,9 +160,103 @@ p{
                 transition: 0.3s;
             }      
 
+            .modal-content input[type="submit"]:hover {
+                background: #DB5B65; 
+            }
+
 .contact-bottom{
     width: 100%;
     height: 611px;
     background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
 }
+    .contact-info{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11%;
+        margin-top: auto;
+        margin-bottom: 125px;
+    }
+        .frame1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            align-self: self-start;
+            gap: 24px;
+        }
+
+            .frame-title{
+                color: #2C2F24;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px;
+            }
+
+            .frame-tel{
+                color: #AD343E;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; /* 125% */
+                letter-spacing: -0.72px;
+            }
+
+        .time{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-self: self-start;
+            gap: 24px;
+        }
+
+            .time-title{
+                color: #2C2F24;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px;
+            }
+            .time-info{
+                display: flex;
+                flex-direction: column;
+                color: #2C2F24;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        .location{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-self: self-start;
+            gap: 24px
+        }
+            .location-title{
+                color: #2C2F24;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px;
+            }
+
+            .location-info p{
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px;
+            }
 
