@@ -48,7 +48,7 @@ p {
 }
 
 .title-book {
-    width: 71%;
+    width: 100%;
     text-align: center;
     font-family: 'Playfair Display', serif;
     font-size: 100px;
@@ -60,7 +60,7 @@ p {
 }
 
 .paragraph-book {
-    width: 67%;
+    width: 80%;
     text-align: center;
     font-family: 'DM Sans', sans-serif;
     font-size: 18px;

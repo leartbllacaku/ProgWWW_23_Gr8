@@ -75,7 +75,25 @@ p {
   padding-top: 50px;
 }
 
+.btn-all{
+  color: white;
+  background: #AD343E;
+  display: flex;
+  width: 150px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
 
+.btn-all:hover{
+  color: black;
+  background: rgba(249, 249, 247, 0.7);
+  border: 2px solid #AD343E;
+}
 .btn {
   display: flex;
   width: 150px;
@@ -85,6 +103,7 @@ p {
   gap: 10px;
   border-radius: 50px;
   border: 1px solid var(--Neutral-03, #DBDFD0);
+  cursor: pointer;
 }
 
 .btn:hover {
