@@ -41,6 +41,15 @@ p{
     align-items: flex-start;
     margin-bottom: auto;
 }
+.container-1-left-content img{
+    transition: all 0.3s;
+    border-radius: 12px;
+}
+.container-1-left-content img:hover{
+        transform: translateY(-10px);
+        cursor: pointer;
+        
+}
 .container-1-right-content{
     width: 50%;
     display: flex;
@@ -118,6 +127,7 @@ p{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 24px;
+    transition:all 0.3s;
 }
 .column-1-left{
     display: flex;
@@ -149,6 +159,7 @@ p{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 24px;
+    transition:all 0.3s;
 }
 .column-2-left{
     display: flex;
@@ -180,6 +191,7 @@ p{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 16px;
+    transition:all 0.3s;
 }
 .column-3-left{
     display: flex;
@@ -193,6 +205,7 @@ p{
     align-items: flex-start;
     gap: 16px;
 }
+
 .title-column-3{
     font-family: 'DM Sans', sans-serif;
     size: 20px;
@@ -205,7 +218,12 @@ p{
     line-height: 24px;
     font-weight: 400;
 }
-
+.column-1:hover,
+.column-2:hover,
+.column-3:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
 .container-3{
     width: 100%;
     height: 920px;
@@ -256,86 +274,6 @@ p{
     
 }
 
-/*.container-3-content-left-down{
-    width: 38.125%;
-    height: 372px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 24px;
-    justify-items: center;
-    align-items: center;
-}
-.down1{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 174px;
-    background: #FFFFFF;
-    justify-items: center;
-    align-items: center;
-    gap: 15px;
-}
-.down1-h{
-    font-family: 'Playfair Display', serif;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 60.5px;
-}
-.down2{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 174px;
-    background: #FFFFFF;
-    justify-items: center;
-    align-items: center;
-    gap: 15px;
-}
-.down2-h{
-    font-family: 'Playfair Display', serif;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 60.5px;
-}
-.down3{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 174px;
-    background: #FFFFFF;
-    justify-items: center;
-    align-items: center;
-    gap: 15px;
-}
-.down3-h{
-    font-family: 'Playfair Display', serif;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 60.5px;
-}
-.down4{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 174px;
-    background: #FFFFFF;
-    justify-items: center;
-    align-items: center;
-    gap: 15px;
-}
-.down4s-h{
-    font-family: 'Playfair Display', serif;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 60.5px;  
-}
-*/
-
 
 .container-3-content-left-down {
     width: 100%;
@@ -355,6 +293,7 @@ p{
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+    transition: all 0.3s;
   }
   
   .down3,
@@ -367,6 +306,13 @@ p{
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+    transition: all 0.3s;
+  }
+  .down1:hover,
+  .down2:hover,
+  .down3:hover,
+  .down4:hover{
+    transform: translateY(-10px);
   }
   
  
@@ -446,6 +392,14 @@ p{
 }
 .container-3-content-right img{
     object-fit: cover;
+    transition: all 0.3s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.container-3-content-right img:hover{
+    transform: translateX(-10px);
+    
 }
 
 .container-5{
@@ -486,6 +440,11 @@ p{
     border-radius: 12px;
     background: #F9F9F7;
     gap: 32px;
+    transition: all 0.3s;
+}
+.container-5-card1:hover{
+    transform: translateY(-10px);
+
 }
 .container-5-card1-element{
     width: 83%;
