@@ -294,6 +294,7 @@ p{
     padding: 20px;
     text-align: center;
     transition: all 0.3s;
+    cursor: pointer;
   }
   
   .down3,
@@ -307,6 +308,7 @@ p{
     padding: 20px;
     text-align: center;
     transition: all 0.3s;
+    cursor: pointer;
   }
   .down1:hover,
   .down2:hover,
@@ -441,6 +443,7 @@ p{
     background: #F9F9F7;
     gap: 32px;
     transition: all 0.3s;
+    cursor: pointer;
 }
 .container-5-card1:hover{
     transform: translateY(-10px);
