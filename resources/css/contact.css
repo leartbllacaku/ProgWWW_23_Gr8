@@ -46,6 +46,10 @@ p{
             gap: 24px;
         }
             .contact-title span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
                 color: #2C2F24;
                 font-family: 'Playfair Display', serif;
                 font-size: 100px;
