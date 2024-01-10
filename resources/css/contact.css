@@ -214,7 +214,7 @@ p{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             align-self: self-start;
             gap: 24px;
         }
@@ -239,8 +239,8 @@ p{
         .location{
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-start;
+            align-items: flex-start;
             align-self: self-start;
             gap: 24px
         }
