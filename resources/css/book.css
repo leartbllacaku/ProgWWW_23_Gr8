@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+}
+.book-container-1-background{
+    width: 100%;
+    height: 586px;
+    background: #F9F9F7;
+}
+.book-container-2-map{
+    width: 100%;
+    height: 767px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.book-container-2-map iframe{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
