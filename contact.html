@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="resources/css/contact.css">
+    <link rel="icon" href="resources/Images/logo.svg" type="image/icon type">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
@@ -16,6 +18,80 @@
 </head>
 <body>
     <div id="navbar"></div>
+        <div class="contact-top">
+            <div class="top-content">
+                
+                <div class="contact-title">
+                    <span>Contact Us</span>
+                    <p>We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+                </div>
+                <div id="form-modal-content" class="modal-content">
+   
+                    <form action="https://formspree.io/f/xdorzqer" method="POST">
+                        <table class="form-table">
+                            <tbody>
+                                <tr class="first-row">
+                                    <td>
+                                        <div class="flex flex-column">        
+                                            <label for="Name">Name</label>
+                                            <input type="text" id="name" name="name" required="" placeholder="John O'Brian">
+                                        </div>                                    
+                                    </td>
+                                    <td>
+                                        <div class="flex flex-column">
+                                            <label for="Mail">Email</label>
+                                            <input type="email" id="mail" name="mail" required="" placeholder="example@gmail.com">
+                                        </div>
+                                    </td>
+                                </tr>
+                            <tr class="second-row">
+                                <td colspan="2">
+                                    <div class="flex flex-column">
+                                        <label for="total-persons">Subject</label>
+                                        <input style="width: 100%;" type="text" id="subject" name="subject" placeholder="Optional">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="first-row">
+                                <td>
+                                    <div class="flex flex-column">        
+                                        <label for="Name">Message</label>
+                                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                                    </div>                                    
+                                </td>
+                            </tr>
+                            
+                        </tbody></table>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+                            
+            </div>
+        </div> 
+        <div class="contact-bottom">
+            <div class="contact-info">
+                <div class="frame1">
+                    <p class="frame-title">Call Us:</p>
+                    <p class="frame-tel">049 300 300</p>
+                </div>
+                <div class="time">
+                    <p class="time-title">Hours:</p>
+                    <p class="time-info">Mon-Fri: 11am - 8pm
+                        <br>
+                    Sat, Sun: 9am - 10pm
+                    </p>
+                </div>
+                <div class="location">
+                    <p class="location-title">Our Location:</p>
+                    <div class="location-info">
+                        <p>Haxhi Zeka </p>
+                        <p> Prishtina, 10000 </p>
+                        <p>Republic of Kosova</p>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
     <div id="footer"></div>
 </body>
 </html>
