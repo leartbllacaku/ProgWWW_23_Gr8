@@ -1,20 +1,34 @@
-function validateForm() {
-    var name = document.getElementById('name').value;
-    var mmail = document.getElementById('mail').value;
+document.addEventListener('DOMContentLoaded', function(){
+    var form = document.querySelector('form');
 
-    // Check if name contains numbers
-    if (/\d/.test(name)) {
-        alert('Name cannot contain numbers');
-        return;
+    form.addEventListener('submit', function (event){
+        var name = document.getElementById('name').value;
+        var mail = document.getElementById('mail').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+
+        var errors = [];
+      if (!name || !mail || !subject || !message) {
+        errors.push('Please fill in all fields');
+      } else {
+        if (!isValidName(name)) {
+          errors.push('Invalid name. Please enter only letters for the name.');
+        }
+        if (!isValidPhone(mail)) {
+          errors.push('Invalid phone number. Please enter a valid email address scontaining a @.');
+        }
+      }
+      if (errors.length > 0) {
+        alert(errors.join('\n'));
+        event.preventDefault(); 
+      }
+    });
+
+    function isValidName(name) {
+      return /^[a-zA-Z\s]+$/.test(name);
     }
 
-    // Check if email contains @
-    if (!/@/.test(mmail)) {
-        alert('Invalid email format. Must contain @ symbol.');
-        return;
+    function isValidPhone(mail) {
+        return /@/.test(mail);
     }
-
-    // If both checks pass, the form is valid
-    alert('Form is valid! Submitting...');
-    // You can submit the form or perform additional actions here
-}
+  });
