@@ -136,13 +136,7 @@ a{
   font-weight: 500;
   line-height: 24px;
 }
-#home{
-  border: none;
-  border-radius: 34px;
-  width: 77px;
-  height: 32px;
-  background: #DBDFD0;
-} 
+
 .book-button1{
   width: 12%;
   height: 48px;

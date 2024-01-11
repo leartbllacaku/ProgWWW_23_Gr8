@@ -164,7 +164,7 @@ p{
             align-items: center;
             height: 375px;
             width: 25%;
-            transition: all 0.3s ease;
+            transition: all ease-out 0.5s;
         }
             .card1:hover{
                 transform: scale(1.1);
@@ -193,7 +193,7 @@ p{
                     align-items: center;
                     background: rgba(77, 89, 43, 0.12);
                     cursor: pointer;
-                    transition: 0.5s;
+                    transition: ease-in 0.3s;
                 }
                     .card-logo:hover{
                         box-shadow: 0px 0px 4px rgba(77, 89, 43, 0.7) inset,
@@ -291,9 +291,16 @@ p{
     height: 566px;
     padding:0;
     object-fit: cover;
+    transition: ease-in 0.5s;
+    border-radius: 25px;
 } 
 .about-image:hover{
     cursor: pointer;
+    transform: translate(-20px,-20px);
+}
+
+.about-image:hover ~ .left-section-text{
+    transform: translate(20px,20px);
 }
 .left-section-text{
     width: 70%;
@@ -310,6 +317,7 @@ p{
     opacity: 0.95;
     border-radius: 20px;
     color: white;
+    transition: ease-in 0.5s;
 }
 .left-section-text-container{
     width: 81%;
@@ -483,12 +491,14 @@ p{
         align-items: flex-start;
         flex: 1;  
 }
+    
  
     .section3-card-image{
         width: 100%;
         height: 320px;
         border-radius: 0px;
         object-fit: cover;
+        border-radius: 10px;
 }
 
         .section3-card-title{
@@ -534,16 +544,40 @@ p{
     align-items: center;
     gap: 24px;
 }
-.section4-left-image{
-    margin-bottom: auto;
-}
+
 .chef-image{
     width: 431px;
     height: 600px;
     display: flex;
     margin-bottom: auto;
     object-fit: cover;
+    transition: ease-in 0.7s;
 }
+
+.section4-left:hover .chef-image{
+    transform: translate(-20px);
+}
+
+.section4-curry{
+    transition: ease-in 0.7s;
+}
+
+.section4-left:hover .section4-curry{
+    transform: translate(20px,-20px);
+}
+
+.section4-ironpot{
+    transition: ease-in 0.7s;
+}
+
+.section4-left:hover .section4-ironpot{
+    transform: translate(20px,20px);
+}
+
+.section4-left-image{
+    margin-bottom: auto;
+}
+
 .section4-right-image{
     display: flex;
     flex-direction: column;
@@ -672,6 +706,12 @@ p{
     border-radius: 12px;
     background: #F9F9F7;
     gap: 32px;
+    transition: 0.3s;
+}
+
+.section5-card1:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
 }
 .section5-card1-element{
     width: 83%;
@@ -794,6 +834,7 @@ p{
     justify-content: flex-start;
     gap: 45px;
     background: #fff;
+    border-radius: 20px;
 }
 
 .left-bottom{
@@ -824,6 +865,7 @@ p{
             width: 100%;
             justify-content: center;
             align-items: flex-start;
+            border-radius: 20px;
         }
 
 .bottom-right{
@@ -841,9 +883,11 @@ p{
         align-items: center;
         gap: 30px;
         background: #fff;
+        border-radius: 20px;
     }
         .blog-foto{
             width: 100%;
+            border-radius: 20px;
         }
         .blog-2-group{
             width: 83%;

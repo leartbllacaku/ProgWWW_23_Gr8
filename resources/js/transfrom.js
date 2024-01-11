@@ -7,8 +7,15 @@ const card4 = document.getElementById("card4")
 
 function blur(card, ...other){
     card.addEventListener("mouseover", e => {
+        console.log("Okej Okej")
         other.forEach(element => {
-           element.style.backdropFilter = "blur(10px)" 
+           element.style.filter = "blur(3px)" 
+        });
+    })
+    card.addEventListener("mouseout", e => {
+        console.log("Okej Okej")
+        other.forEach(element => {
+           element.style.filter = "blur(0)" 
         });
     })
 }
@@ -17,3 +24,10 @@ blur(card1, card2, card3, card4)
 blur(card2, card1, card3, card4)
 blur(card3, card1, card2, card4)
 blur(card4, card1, card2, card3)
+
+document.getElementById('bookButoni').addEventListener('click', function() {
+    // Change 'anotherPage.html' to the path of your target page
+    window.location.href = 'book.html'})
+document.getElementById('menuButoni').addEventListener('click', function() {
+        // Change 'anotherPage.html' to the path of your target page
+        window.location.href = 'menu.html'})
