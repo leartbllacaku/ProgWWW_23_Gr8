@@ -28,20 +28,20 @@
                 </div>
                 <div id="form-modal-content" class="modal-content">
    
-                    <form method="POST">
+                    <form action="https://formspree.io/f/xeqyooab" method="POST">
                         <table class="form-table">
                             <tbody>
                                 <tr class="first-row">
                                     <td>
                                         <div class="flex flex-column">        
                                             <label for="Name">Name</label>
-                                            <input type="text" id="name" name="name" required="" placeholder="John O'Brian">
+                                            <input type="text" id="name" name="name" placeholder="John O'Brian">
                                         </div>                                    
                                     </td>
                                     <td>
                                         <div class="flex flex-column">
                                             <label for="Mail">Email</label>
-                                            <input type="email" id="mail" name="mail" required="" placeholder="example@gmail.com">
+                                            <input type="email" id="mail" name="mail" placeholder="example@gmail.com">
                                         </div>
                                     </td>
                                 </tr>
@@ -63,7 +63,7 @@
                             </tr>
                             
                         </tbody></table>
-                        <input id="send" type="submit" value="Send" onclick="validateForm()">
+                        <input id="send" type="submit" value="Send">
                     </form>
                 </div>
                             
@@ -93,12 +93,13 @@
                 </div>
             </div>
         </div>
+        <script src="resources/js/contactFormValidate.js"></script>
+        
+    
         <button id="scrollToTopBtn" onclick="smoothScrollToTop()">
             <canvas id="arrowCanvas" width="20" height="20"></canvas>
         </button>
     <div id="footer"></div>
-
-    <script src="resources/js/contactFormValidate.js"></script>
     <script src="resources/js/scrollButton.js"></script>
 </body>
 </html>
