@@ -9,13 +9,15 @@ function blur(card, ...other){
     card.addEventListener("mouseover", e => {
         console.log("Okej Okej")
         other.forEach(element => {
-           element.style.filter = "blur(3px)" 
+           element.style.filter = "blur(3px)";
+           element.style.transition = "all 0.6s" 
         });
     })
     card.addEventListener("mouseout", e => {
         console.log("Okej Okej")
         other.forEach(element => {
-           element.style.filter = "blur(0)" 
+           element.style.filter = "blur(0)"
+           element.style.transition = "all 0.6s"  
         });
     })
 }
@@ -31,3 +33,4 @@ document.getElementById('bookButoni').addEventListener('click', function() {
 document.getElementById('menuButoni').addEventListener('click', function() {
         // Change 'anotherPage.html' to the path of your target page
         window.location.href = 'menu.html'})
+

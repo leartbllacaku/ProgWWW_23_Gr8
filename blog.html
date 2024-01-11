@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
-    <link rel="icon" href="/resources/Images/logo.svg" type="image/icon type">
+    <link rel="icon" href="resources/Images/logo.svg" type="image/icon type">
     <link rel="stylesheet" href="resources/css/blog-css.css">
+    <link rel="stylesheet" href="resources/css/scrollButton.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
@@ -129,7 +130,9 @@
         </div>
         </div>
         </div>
-        
+        <button id="scrollToTopBtn" onclick="smoothScrollToTop()">
+          <canvas id="arrowCanvas" width="20" height="20"></canvas>
+        </button>
     </main>
 
 
@@ -140,6 +143,6 @@
 
 
     <div id="footer"></div> 
-    
+    <script src="resources/js/scrollButton.js"></script>
 </body>
 </html>

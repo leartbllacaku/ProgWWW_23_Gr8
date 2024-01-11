@@ -1,13 +1,6 @@
 function validateForm() {
     var name = document.getElementById('name').value;
-    var mail = document.getElementById('email').value;
-    var message = document.getElementById('message').value;
-
-    // Check if name and email are both blank
-    if (name.trim() === '' || mmail.trim() === '') {
-        alert('Name and email must be completed');
-        return;
-    }
+    var mmail = document.getElementById('mail').value;
 
     // Check if name contains numbers
     if (/\d/.test(name)) {
@@ -16,7 +9,7 @@ function validateForm() {
     }
 
     // Check if email contains @
-    if (!/@/.test(mail)) {
+    if (!/@/.test(mmail)) {
         alert('Invalid email format. Must contain @ symbol.');
         return;
     }
