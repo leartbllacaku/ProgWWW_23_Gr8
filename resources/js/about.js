@@ -6,7 +6,7 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       const target = entry.target;
       const endValue = parseInt(target.getAttribute("data-val"));
-      const duration = Math.min(interval, 3000); // Limit duration to 1000ms
+      const duration = Math.min(interval, 3000);
 
       animateCounting(target, endValue, duration);
       observer.unobserve(target);
