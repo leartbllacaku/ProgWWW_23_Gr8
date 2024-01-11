@@ -156,6 +156,7 @@ body {
     width: 77px;
     height: 32px;
     color: black;
+    padding: 10px;
 }
 
 .active {

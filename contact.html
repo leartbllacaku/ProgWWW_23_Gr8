@@ -48,7 +48,7 @@
                                 <td colspan="2">
                                     <div class="flex flex-column">
                                         <label for="total-persons">Subject</label>
-                                        <input style="width: 100%;" type="text" id="subject" name="subject" placeholder="Optional">
+                                        <input style="width: 100%;" type="text" id="subject" name="subject" placeholder="Order">
                                     </div>
                                 </td>
                             </tr>
@@ -56,13 +56,13 @@
                                 <td>
                                     <div class="flex flex-column">        
                                         <label for="Name">Message</label>
-                                        <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message here"></textarea>
+                                        <textarea name="" id="message" cols="30" rows="10" placeholder="Enter your message here"></textarea>
                                     </div>                                    
                                 </td>
                             </tr>
                             
                         </tbody></table>
-                        <input type="submit" value="Send">
+                        <input id="send" type="submit" value="Send" onclick="validateForm()">
                     </form>
                 </div>
                             
@@ -93,5 +93,7 @@
             </div>
         </div>
     <div id="footer"></div>
+
+    <script src="resources/js/contactFormValidate.js"></script>
 </body>
 </html>
