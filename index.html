@@ -7,6 +7,7 @@
     <title>Restaurant</title>
 
     <link rel="stylesheet" href="resources/css/index.css">
+    <link rel="stylesheet" href="resources/css/scrollButton.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -411,11 +412,15 @@
                 </div>
             </div>
         </div>
+        <button id="scrollToTopBtn" onclick="smoothScrollToTop()">
+            <canvas id="arrowCanvas" width="20" height="20"></canvas>
+        </button>
 
 
     </main>
     <div id="footer"></div>
-    <script src="resources/js/transfrom.js"></script>
+    <script src="resources/js/transform.js"></script>
+    <script src="resources/js/scrollButton.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="resources/css/contact.css">
+    <link rel="stylesheet" href="resources/css/scrollButton.css">
     <link rel="icon" href="resources/Images/logo.svg" type="image/icon type">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -27,7 +28,7 @@
                 </div>
                 <div id="form-modal-content" class="modal-content">
    
-                    <form action="https://formspree.io/f/xdorzqer" method="POST">
+                    <form method="POST">
                         <table class="form-table">
                             <tbody>
                                 <tr class="first-row">
@@ -92,8 +93,12 @@
                 </div>
             </div>
         </div>
+        <button id="scrollToTopBtn" onclick="smoothScrollToTop()">
+            <canvas id="arrowCanvas" width="20" height="20"></canvas>
+        </button>
     <div id="footer"></div>
 
     <script src="resources/js/contactFormValidate.js"></script>
+    <script src="resources/js/scrollButton.js"></script>
 </body>
 </html>

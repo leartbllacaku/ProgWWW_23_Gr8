@@ -8,9 +8,10 @@
     <title>Menu</title>
 
 
-    <link rel="icon" href="/resources/Images/logo.svg" type="image/icon type">
+    <link rel="icon" href="resources/Images/logo.svg" type="image/icon type">
 
     <link rel="stylesheet" href="resources/css/menu.css">
+    <link rel="stylesheet" href="resources/css/scrollButton.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
@@ -314,7 +315,12 @@
       </tr>
     </table>
   </div>
+  <button id="scrollToTopBtn" onclick="smoothScrollToTop()">
+    <canvas id="arrowCanvas" width="20" height="20"></canvas>
+  </button>
+
   <div id="footer"></div>
+  <script src="resources/js/scrollButton.js"></script>
 </body>
 
 </html>

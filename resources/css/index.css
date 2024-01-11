@@ -201,7 +201,7 @@ p{
                         background: transparent;
                     }
                     .card-logo:hover .cardlogo{
-                        filter: brightness(0) saturate(100%) invert(22%) sepia(21%) saturate(7449%) hue-rotate(336deg) brightness(95%) contrast(81%);                    
+                        filter: brightness(0) saturate(100%) invert(22%) sepia(21%) saturate(7449%) hue-rotate(336deg) brightness(95%) contrast(81%);                   
                     }
                     .cardlogo{
                         width: 48px;
@@ -562,6 +562,7 @@ p{
     transition: ease-in 0.7s;
 }
 
+
 .section4-left:hover .section4-curry{
     transform: translate(20px,-20px);
 }
@@ -866,6 +867,9 @@ p{
             justify-content: center;
             align-items: flex-start;
             border-radius: 20px;
+        }
+        .blog1-image:hover{
+            color: wheat;
         }
 
 .bottom-right{

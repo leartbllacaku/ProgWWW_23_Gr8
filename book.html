@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book</title>
     <link rel="stylesheet" href="resources/css/book.css">
+    <link rel="stylesheet" href="resources/css/scrollButton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
-    <link rel="icon" href="/resources/Images/logo.svg" type="image/icon type">
+    <link rel="icon" href="resources/Images/logo.svg" type="image/icon type">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
@@ -85,7 +86,11 @@
         <div class="book-container-2-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1037.2394813942701!2d21.16721547751694!3d42.66651977203128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549f21ac800e19%3A0x9e9728f8c58d773f!2sSami%20Frasheri%20Gymnasium%2C%20Nazim%20Gafurri%2C%20Prishtina%2010000!5e0!3m2!1sen!2s!4v1704830878996!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <button id="scrollToTopBtn" onclick="smoothScrollToTop()">
+            <canvas id="arrowCanvas" width="20" height="20"></canvas>
+        </button>
     </main>
     <div id="footer"></div>
+    <script src="resources/js/scrollButton.js"></script>
 </body>
 </html>
