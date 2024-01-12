@@ -34,15 +34,15 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 15%;
 
 }
 
 .container-1-left-content {
     width: 50%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     margin-bottom: auto;
 }
 
