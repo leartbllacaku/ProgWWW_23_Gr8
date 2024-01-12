@@ -94,27 +94,6 @@ p {
   background: rgba(249, 249, 247, 0.7);
   border: 2px solid #AD343E;
 }
-.btn {
-  display: flex;
-  width: 150px;
-  height: 48px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  border-radius: 50px;
-  border: 1px solid var(--Neutral-03, #DBDFD0);
-  cursor: pointer;
-}
-
-.btn:hover {
-  background: #AD343E;
-  color: white;
-}
-
-.btn:focus {
-  background-color: darkgreen;
-  color: white;
-}
 
 .menu-section {
   padding: 88px, 152px, 133px, 152px;
@@ -127,13 +106,14 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-transition: all 0.3s;
+  transition: all 0.3s;
   width: 286px;
   height: 440px;
   flex-shrink: 0;
   border-radius: 12px;
   border: 1.5px solid var(--Neutral-03, #DBDFD0);
   background: var(--Neutral-01, #FFF);
+  cursor: pointer;
 
 }
 
@@ -196,6 +176,11 @@ transition: all 0.3s;
   padding-top: 24px;
   padding-bottom: 133px;
   gap: 25px;
+}
+
+.hovered-image:hover{
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .third-section {
@@ -294,6 +279,81 @@ padding-left: 18px; */
 .box-photo {
   border-radius: 10px 10px 0 0;
 }
+
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.wrapper .static-txt {
+  font-family: 'DM Sans', sans-serif;
+  color: rgba(44, 47, 36, 1);
+  font-size: 40px; 
+  font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+  font-family: 'DM Sans', sans-serif;
+  margin-left: 15px;
+  height: 60px; 
+  line-height: 60px; 
+  overflow: hidden;
+}
+
+.dynamic-txts li {
+  
+  list-style: none;
+  color: rgba(173, 52, 62, 1);
+  ;
+  font-size: 40px; 
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+      top: -240px; 
+  }
+}
+
+.dynamic-txts li span {
+  position: relative;
+  margin: 5px 0;
+  line-height: 60px; 
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%, 60% {
+      left: calc(100% + 30px);
+  }
+  100% {
+      left: 0;
+  }
+} 
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1000px) {
   .menu-first {

@@ -124,6 +124,7 @@ body {
 .logo-image {
     width: 55px;
     height: 53px;
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .logo-title {
@@ -211,8 +212,8 @@ body {
 }
 
 .book-button {
-    width: 12%;
-    height: 48px;
+    width: fit-content;
+    padding: 12px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,8 +222,6 @@ body {
     border-radius: 118px;
     border: 2px solid black;
     text-wrap: nowrap;
-    padding-left: 24px;
-    padding-right: 24px;
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-style: normal;
