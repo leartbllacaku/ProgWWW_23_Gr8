@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,77 +9,80 @@
     <link rel="stylesheet" href="resources/css/scrollButton.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="resources/Images/logo.svg" type="image/icon type">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(function () {
-            $('#navbar').load('components/navbar.html', function() {
+            $('#navbar').load('components/navbar.html', function () {
                 $('#book').addClass('active');
             });
             $('#footer').load('components/footer.html');
         });
     </script>
 </head>
+
 <body>
     <div id="navbar"></div>
     <main>
         <div class="book-container-1-background">
-    <div class="container-1-book">
-            <div class="book-title-paragraph">
-                <h1 class="title-book">Book A Table</h1>
-                <p class="paragraph-book">We consider all the drivers of change gives you the components you need to change to create a truly happens.</p>
+            <div class="container-1-book">
+                <div class="book-title-paragraph">
+                    <h1 class="title-book">Book A Table</h1>
+                    <p class="paragraph-book">We consider all the drivers of change gives you the components you need to
+                        change to create a truly happens.</p>
+                </div>
+                <div id="form-modal-content" class="modal-content">
+                    <form action="https://formspree.io/f/xeqyooab" method="POST">
+                        <table class="form-table">
+                            <tbody>
+                                <tr class="first-row">
+                                    <td>
+                                        <div class="flex flex-column">
+                                            <label for="date">Date</label>
+                                            <input type="date" id="date" name="date">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="flex flex-column">
+                                            <label for="Time">Time</label>
+                                            <input type="time" id="time" name="time">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="first-row">
+                                    <td>
+                                        <div class="flex flex-column">
+                                            <label for="Name">Name</label>
+                                            <input type="text" id="name" name="name" placeholder="Enter your name">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="flex flex-column">
+                                            <label for="Phone">Phone</label>
+                                            <input type="text" id="phone" name="phone" placeholder="+383-xx-xxx-xxx">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="second-row">
+                                    <td colspan="2">
+                                        <div class="flex flex-column">
+                                            <label for="total-persons">Party Size</label>
+                                            <input style="width: 100%;" type="number" id="partySize" name="partySize"
+                                                min="1" max="10">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <input type="submit" value="Book A Table">
+                    </form>
+                </div>
+
+
             </div>
-<div id="form-modal-content" class="modal-content">
-    <form action="https://formspree.io/f/xeqyooab" method="POST">
-        <table class="form-table">
-            <tbody>
-                <tr class="first-row">
-                    <td>
-                        <div class="flex flex-column">        
-                            <label for="date">Date</label>
-                            <input type="date" id="date" name="date" >
-                        </div>                                    
-                    </td>
-                    <td>
-                        <div class="flex flex-column">
-                            <label for="Time">Time</label>
-                            <input type="time" id="time" name="time" >
-                        </div>
-                    </td>
-                </tr>
-                <tr class="first-row">
-                    <td>
-                        <div class="flex flex-column">        
-                            <label for="Name">Name</label>
-                            <input type="text" id="name" name="name"  placeholder="Enter your name">
-                        </div>                                    
-                    </td>
-                    <td>
-                        <div class="flex flex-column">
-                            <label for="Phone">Phone</label>
-                            <input type="text" id="phone" name="phone"  placeholder="+383-xx-xxx-xxx">
-                        </div>
-                    </td>
-                </tr>
-                <tr class="second-row">
-                    <td colspan="2">
-                        <div class="flex flex-column">
-                            <label for="total-persons">Party Size</label>
-                            <input style="width: 100%;" type="number" id="partySize" name="partySize"  min="1" max="10">
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <input type="submit" value="Book A Table">
-    </form>
-</div>
-
-
-</div>
         </div>
     
         <div style="padding-top: 40px; padding-bottom: 50px; background: #F9F9F7;" class="wrapper">
@@ -91,7 +95,10 @@
             </ul>
           </div>
         <div class="book-container-2-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1037.2394813942701!2d21.16721547751694!3d42.66651977203128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549f21ac800e19%3A0x9e9728f8c58d773f!2sSami%20Frasheri%20Gymnasium%2C%20Nazim%20Gafurri%2C%20Prishtina%2010000!5e0!3m2!1sen!2s!4v1704830878996!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1037.2394813942701!2d21.16721547751694!3d42.66651977203128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549f21ac800e19%3A0x9e9728f8c58d773f!2sSami%20Frasheri%20Gymnasium%2C%20Nazim%20Gafurri%2C%20Prishtina%2010000!5e0!3m2!1sen!2s!4v1704830878996!5m2!1sen!2s"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <button id="scrollToTopBtn" onclick="smoothScrollToTop()">
             <canvas id="arrowCanvas" width="20" height="20"></canvas>
@@ -101,4 +108,5 @@
     <script src="resources/js/scrollButton.js"></script>
     <script src="resources\js\book.js"></script>
 </body>
+
 </html>
