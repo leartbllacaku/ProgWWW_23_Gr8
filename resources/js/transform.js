@@ -14,7 +14,6 @@ function blur(card, ...other){
         });
     })
     card.addEventListener("mouseout", e => {
-        console.log("Okej Okej")
         other.forEach(element => {
            element.style.filter = "blur(0)"
            element.style.transition = "all 0.6s"  

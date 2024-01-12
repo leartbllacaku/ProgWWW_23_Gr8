@@ -124,6 +124,7 @@ body {
 .logo-image {
     width: 55px;
     height: 53px;
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .logo-title {
@@ -158,6 +159,49 @@ body {
     color: black;
     padding: 10px;
 }
+.menu-item{
+    color: #83818c;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin: 0 6px;
+    z-index: 1;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+.menu-item:before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #181f31;
+    border-radius: 8px 8px 0 0;
+    opacity: 0;
+  }
+
+  
+.menu-item:not(.active):hover:before {
+    opacity: 1;
+    bottom: 0;
+  }
+  
+  .menu-item:not(.is-active):hover {
+    color: #333;
+  }
+  
+  /* .nav-indicator {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    transition: 0.4s;
+    height: 5px;
+    z-index: 1;
+    border-radius: 8px 8px 0 0;
+  } */
 
 .active {
     border: none;
@@ -168,8 +212,8 @@ body {
 }
 
 .book-button {
-    width: 12%;
-    height: 48px;
+    width: fit-content;
+    padding: 12px 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,8 +222,6 @@ body {
     border-radius: 118px;
     border: 2px solid black;
     text-wrap: nowrap;
-    padding-left: 24px;
-    padding-right: 24px;
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-style: normal;

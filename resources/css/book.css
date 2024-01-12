@@ -159,3 +159,71 @@ p {
     width: 100%;
     height: 100%;
 }
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper .static-txt {
+    font-family: 'DM Sans', sans-serif;
+    color: rgba(44, 47, 36, 1);
+    font-size: 40px; 
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+    font-family: 'DM Sans', sans-serif;
+    margin-left: 15px;
+    height: 60px; 
+    line-height: 60px; 
+    overflow: hidden;
+}
+
+.dynamic-txts li {
+    
+    list-style: none;
+    color: rgba(173, 52, 62, 1);
+    ;
+    font-size: 40px; 
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -240px; 
+    }
+}
+
+.dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 60px; 
+}
+
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #343F4F;
+    border-left: 2px solid #FC6D6D;
+    animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+} 

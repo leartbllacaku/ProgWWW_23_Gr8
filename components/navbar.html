@@ -10,6 +10,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+
+    <style>
+        @keyframes horizontalMove {
+    0%, 100% {
+      transform: translateX(0); /* Original position */
+    }
+    25%, 75% {
+      transform: translateX(10px); /* Move 10px to the left */
+    }
+    50% {
+      transform: translateX(-10px); /* Move 10px to the right */
+    }
+  }
+
+    .logo-image:hover{
+    animation: horizontalMove 4s infinite;
+}
+
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -19,7 +39,7 @@
                     <img src="resources/Images/tel-icon.svg" alt="Phone Icon">
                     <a href="tel:044 100 100">+383 44 100 100</a>
                 </div>
-                <div class="mail">
+                <div style="cursor: pointer;" class="mail">
                     <img src="resources/Images/mail-icon.svg" alt="Email Icon">
                     <a href="mailto:yummy@bistro.com" target="_blank">yummy@bistro.com</a>
                 </div>
@@ -38,18 +58,22 @@
         </div>
         <div class="bottom-bar">
             <div class="logo">
-                <img class="logo-image" src="resources/Images/logo.svg" alt="Restaurant Logo">
-                <span class="logo-title">Bistro Bliss</span>
+                <a href="/index.html">
+                    <img class="logo-image" src="resources/Images/logo.svg" alt="Restaurant Logo">
+                </a>
+                <a style="text-decoration: none;" href="/index.html"><span class="logo-title">Bistro Bliss</span></a>
             </div>
             <nav class="menu">
-                <a id="home" href="index.html">Home</a>
-                <a id="about" href="about.html">About</a>
-                <a id="menu" href="menu.html">Menu</a>
-                <a id="blog" href="blog.html">Blogs</a>
-                <a id="contact" href="contact.html">Contact</a>
+                <a class="menu-item" id="home" href="index.html">Home</a>
+                <a class="menu-item" id="about" href="about.html">About</a>
+                <a class="menu-item" id="menu" href="menu.html">Menu</a>
+                <a class="menu-item" id="blog" href="blog.html">Blogs</a>
+                <a class="menu-item" id="contact" href="contact.html">Contact</a>
+                <!-- <span class="nav-indicator"></span> -->
             </nav>
             <a class="book-button" href="book.html">Book A Table</a>
         </div>
     </nav>
+    <script src="resources/js/navbar.js"></script>
 </body>
 </html>
