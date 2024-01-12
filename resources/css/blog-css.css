@@ -284,7 +284,7 @@ padding-left: 25px;
     left: 0;
     height: 100%;
     width: 100%;
-    background: #343F4F;
+    background:  #F9F9F7;
     border-left: 2px solid #FC6D6D;
     animation: typing 3s steps(10) infinite;
 }
