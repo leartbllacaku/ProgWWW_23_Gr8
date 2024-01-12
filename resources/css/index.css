@@ -1042,7 +1042,6 @@ p{
     
     list-style: none;
     color: rgba(173, 52, 62, 1);
-    ;
     font-size: 40px; 
     font-weight: 500;
     position: relative;
@@ -1068,7 +1067,7 @@ p{
     left: 0;
     height: 100%;
     width: 100%;
-    background: #343F4F;
+    background: #F9F9F7;
     border-left: 2px solid #FC6D6D;
     animation: typing 3s steps(10) infinite;
 }
